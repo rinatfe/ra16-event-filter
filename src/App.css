@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.item {
+  border: 1px solid;
+  padding: 3px;
+}
+
+.item:nth-child(n + 2) {
+  margin-left: 3px;
+}
+
+.selected {
+  background-color: rgb(70, 65, 65);
+  color:white;
+}
+
+img {
+  align-self: flex-start;
+}
+
