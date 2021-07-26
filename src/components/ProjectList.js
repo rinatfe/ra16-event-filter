@@ -1,9 +1,12 @@
 import { Component, UseState } from "react";
 import ProjectItem from "./ProjectItem";
+import PropTypes from 'prop-types';
 
 class ProjectList extends Component {
 
-    
+    static propTypes = {
+        images:PropTypes.array,
+    }
 
     render() {
         const {images} = this.props;

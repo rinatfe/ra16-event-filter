@@ -15,21 +15,18 @@ class Portfolio extends Component {
     state = {current: "All", filteredImage: img};
 
     onSelectFilterHandler(evt) {
-        console.log(evt.target.innerText);
-        this.setState(()=> {
-            let arr = null
+        let arr = null
             if(evt.target.innerText == "All") {
                 arr = img;
             } else {
                 arr= img.filter(item => 
                 item.category === evt.target.innerText);
             }
-            return { 
-                current: evt.target.innerText,
-                filteredImage: arr
-            }  
-        }    
-        );        
+              
+        this.setState( {
+            current: evt.target.innerText,
+            filteredImage: arr
+        });        
     }
 
     render() {

@@ -1,6 +1,13 @@
 import { Component, UseState } from "react";
+import PropTypes from 'prop-types';
 
 class ToolBar extends Component {
+    static propTypes = {
+        filters:PropTypes.array,
+        selected:PropTypes.string,
+        onSelectFilter:PropTypes.func
+    }
+
     render() {
         const {filters, selected, onSelectFilter} = this.props;
         return(

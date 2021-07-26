@@ -23,5 +23,10 @@
 
 img {
   align-self: flex-start;
+  width: 33%;
 }
 
+.image-container {
+  width: 1000px;
+  margin-left: 40px;
+}
